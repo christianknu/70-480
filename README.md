@@ -5,24 +5,12 @@
 * [Microsoft Site with Certification](http://www.microsoft.com/learning/en-us/exam-70-480.aspx)
 * [Microfost Virtual Academy: Developing in HTML5 with JavaScript and CSS3 Jump Start](https://mva.microsoft.com/en-US/training-courses/developing-in-html5-with-javascript-and-css3-jump-start-8223?l=lCnp5kIy_5104984382)
 
-# CSS Cascading order
-Sort according to importance (normal or important) and origin (author, user, or user agent). In ascending order of precedence:
-
-1. user agent declarations
-2. user normal declarations
-3. author normal declarations
-4. author important declarations
-5. user important declarations
-
-[http://www.w3.org/TR/CSS2/cascade.html#cascading-order](http://www.w3.org/TR/CSS2/cascade.html#cascading-order)
-
-
 # Skills measured
 
 ## Implement and manipulate document structures and objects (24%)
 
 ### Create the document structure
-* [Structure the UI by using semantic markup, including for search engines and screen readers (Section, Article, Nav, Header, Footer, and Aside)](./HTML/1.2_document-structure.html)
+* [Structure the UI by using semantic markup, including for search engines and screen readers (Section, Article, Nav, Header, Footer, and Aside)](./HTML/1.1_document-structure.html)
 
 ### Write code that interacts with UI controls
 * [Programmatically add and modify HTML elements](./JavaScript/add_html_elements.html)

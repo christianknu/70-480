@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>1.2 Write code that interacts with UI controls - Add or modify HTML elements</title>
+    <script>
+        window.onload = function () {
+            var element = document.getElementById("outerDiv");
+            console.info(element.innerHTML);
+
+            var paragraphs = document.getElementsByTagName("p");
+            console.info(paragraphs.length);
+
+            var paragraphsWithClass = document.getElementsByClassName("subPara");
+            console.info("<p> elements with class 'subPara': " + paragraphs.length);
+
+            console.info(document.querySelectorAll("p").length);
+            console.info(document.querySelector("#outerDiv").innerHTML);
+
+            var element = document
+                .getElementById("outerDiv")
+                .appendChild(
+                document.createElement("article"));
+            element.innerText = "My new <article> element added with JavaScript";
+
+            var element = document
+                .getElementById("outerDiv")
+                .insertBefore(
+                document.createElement("article"),
+                document.getElementById("innerDiv"));
+            element.innerText = "My second new <article> element added with JavaScript";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Add or modify HTML elements</h1>
+    <div id="outerDiv">
+        <p class="mainPara">Main Paragraph</p>
+        <ul>
+            <li>First List Item</li>
+            <li>Second List Item</li>
+            <li>Third List Item</li>
+            <li>Fourth List Item</li>
+        </ul>
+        <div id="innerDiv">
+            <p class="subPara" id="P1">Paragraph 1</p>
+            <p class="subPara" id="P2">Paragraph 2</p>
+            <p class="subPara" id="P3">Paragraph 3</p>
+            <p class="subPara" id="P4">Paragraph 4</p>
+        </div>
+        <table>
+            <tr>
+                <td>Row 1</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+            </tr>
+            <tr>
+                <td>Row 4</td>
+            </tr>
+            <tr>
+                <td>Row 5</td>
+            </tr>
+        </table>
+        <input type="text" /><input type="submit" value="submit" />
+    </div>
+</body>
+
+</html>
