@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>1.1 Create the document structure</title>
+</head>
+
+<body>
+    <header style="border: 1px solid gray;">
+        <hgroup>
+            <h1>1.1 Create the document structure</h1>
+            <h2>This is the code produced when reading chapter '1.1 Create the document structure'.</h2>
+        </hgroup>
+    </header>
+    <article>
+        <h1>Play with the &lt;progress&gt; HTML5 element</h1>
+        <section>
+            <p>My goal is to reach a 100% in the certification!</p>
+            <span>0</span>
+            <progress value="5" max="100"></progress>
+            <span>100</span>
+        </section>
+        <section>
+            <p>Current status, please wait
+                <mark>patiently</mark>:</p>
+            <progress max="100"></progress>
+        </section>
+    </article>
+    <article style="margin: 30px 0; border-top: 1px solid gray; display: inline-block; width: 100%">
+        <hgroup>
+            <h1>Document structure and headings</h1>
+        </hgroup>
+        <article style="width: 50%; float:left;">
+            <h1>Not recommended structure (pure headings):</h1>
+            <section>
+                <h1>Fruits and Vegetables</h1>
+                <h2>Fruit</h2>
+                <h3>Round fruit</h3>
+                <h3>Long fruit</h3>
+                <h2>Vegetables</h2>
+                <h3>Green</h3>
+                <h3>Coloful</h3>
+            </section>
+        </article>
+        <article style="width: 50%; float:left;">
+            <h1>Recommended structure (using sections):</h1>
+            <section>
+                <h1>Fruits and Vegetables</h1>
+                <section>
+                    <h1>Fruit</h1>
+                    <section>
+                        <h1>Round fruit</h1>
+                    </section>
+                    <section>
+                        <h1>Long fruit</h1>
+                    </section>
+                </section>
+                <section>
+                    <h1>Vegetables</h1>
+                    <section>
+                        <h1>Green</h1>
+                    </section>
+                    <section>
+                        <h1>Coloful</h1>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </article>
+    <footer style="border: 1px solid gray;">
+        <h1>This is just the footer...</h1>
+    </footer>
+</body>
+
+</html>
